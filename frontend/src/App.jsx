@@ -39,6 +39,7 @@ function App() {
 
         if (info === 'title') {
             setAddTask({ ...addTask, title: value })
+
         } else if(info === 'description') {
             setAddTask({ ...addTask, description: value })
         }
@@ -75,8 +76,6 @@ function App() {
     useEffect(() => {
         fetchTasks()
     }, [])
-
-    // console.log(filteredTasks)
 
     return (
         <div className="tasks-container">
