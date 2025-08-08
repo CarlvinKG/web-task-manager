@@ -82,7 +82,7 @@ function App() {
             <div className="add-task">
                 <h1>Task Manager</h1>
                 <form  onSubmit={ handleAddTask }>
-                    <label htmlFor="title">Title:</label>
+                    <label htmlFor="title">Title: <small className="text-red-500">*</small></label>
                     <input id="title" required={true} value={addTask.title} onChange={ (e) => handleOnChange(e, "title") } />
                     <label htmlFor="description">Description:</label>
                     <input id="description" value={addTask.description} onChange={ (e) => handleOnChange(e, "description") } />
